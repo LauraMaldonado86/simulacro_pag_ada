@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* para el contro, de las cajas*/
+}
+
+body {
+    width: 100%;
+    height: 100 vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.encabezado {
+    background-color: #eeecec;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Titulo-principal {
+    color: rgb(238, 21, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.menu {
+    padding-right: 100px;
+}
+
+nav a {
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: black;
+}
+
+nav a:hover {
+    /*para que se ponga de otro color cuando estamos sobre el link*/
+    color: rgb(238, 21, 238);
+}
+
+a:link {
+    /*saca el subrayado del link*/
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url(imagenes/hero\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-hero {
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+#Texto-grande {
+    color: white;
+    font-size: 70px;
+}
+
+#btn-hero {
+    background-color: deeppink;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 60px;
+    padding: 10px 20px;
+}
+
+
+#quienes-somos {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+#quienes-somos img {
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.texto-quienes {
+    padding: 100px;
+    width: 700px;
+    margin-top: 80px;
+}
+
+#somos {
+    color: black;
+    padding-bottom: 20px;
+}
+
+.resaltado {
+    color: deeppink;
+}
+
+.programas {
+    background-color: rgb(36, 36, 36);
+}
+
+.programas h1 {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container-cursos {
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+    height: 375px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+}
+
+
+.imagen-card-1 {
+    width: 100%;
+    height: 125px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(imagenes/front-end-cropped.jpg);
+    /*filter: brightness(0.5);*/
+}
+
+.imagen-card-1 h3 {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.imagen-card-2 {
+    width: 100%;
+    height: 125px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(imagenes/full-stack-cropped.jpg);
+    /*filter: brightness(0.5);*/
+}
+
+.imagen-card-2 h3 {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.imagen-card-3 {
+    width: 100%;
+    height: 125px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(imagenes/python-cropped.jpg);
+    /*filter: brightness(0.5);*/
+}
+
+.imagen-card-3 h3 {
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.contenido-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido-card p {
+    line-height: 1.5;
+    /* espacio de las lineas del parrafo */
+    color: white;
+    font-size: 0.9em;
+}
+
+.contenido-card a {
+    width: 25%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: deeppink;
+}
+
+#caracteristicas {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.items {
+    list-style-type: none;
+}
+
+
+.items-caracteristicas {
+    padding: 100px;
+    width: 500px;
+    margin-top: 80px;
+    line-height: 2;
+}
+
+#caracteristicas img {
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.contenedor-listas {
+    position: relative;
+    display: inline-block;
+    background-color: rgb(243, 34, 243);
+    width: 100%;
+    height: 550px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#titulo-listas {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 20%;
+    right: 20%;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#btn-hero-2 {
+    background-color: deeppink;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 350px;
+    padding: 10px 20px;
+}
+
+footer {
+    font-size: 15px;
+    color: gray;
+    height: 50px;
+    text-align: end;
+    margin-top: 50px;
+    margin-right: 50px;
+}
